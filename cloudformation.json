@@ -61,13 +61,13 @@
         }
     },
     "Outputs": {
-        "DataBrewOutputS3Bucket": {
+        "S3Bucket": {
             "Description": "S3 bucket for DataBrew output",
             "Value": {
                 "Ref": "DataBrewOutputS3Bucket"
             }
         },
-        "DataBrewLabRole": {
+        "RoleName": {
             "Description": "IAM role for DataBrew lab",
             "Value": {
                 "Ref": "DataBrewLabRole"
