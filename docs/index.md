@@ -21,11 +21,15 @@
   
   - In this section, we will be working with AWS Glue Databrew and this section is divided into below parts    
      
-     1. Creating a project
-     2. Exploring the dataset
-     3. Preparing the dataset
-     4. Creating a DataBrew job
-     5. Viewing data lineage 
+     - Creating a project
+     
+     - Exploring the dataset
+     
+     - Preparing the dataset
+     
+     - Creating a DataBrew job
+     
+     - Viewing data lineage 
 
   - Step 2.1: Creating a project
 
