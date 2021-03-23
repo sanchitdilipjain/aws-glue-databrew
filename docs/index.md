@@ -19,8 +19,7 @@
 
 - Step 2: Working with Glue Databrew
   
-  - In this section, we will be working with AWS Glue Databrew and this section is divided into below parts 
-      
+  - In this section, we will be working with AWS Glue Databrew and this section is divided into below parts    
       - Creating a project
       - Exploring the dataset
       - Preparing the dataset
