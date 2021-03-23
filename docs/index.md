@@ -121,9 +121,11 @@
 
       - In this section, we will apply the different transformations to the dataset.
 
-        1. Rename columns
-        2. Change the data type of columns
-        3. Filled with the most frequent value
+          - Rename columns
+
+          - Change the data type of columns
+
+          - Filled with the most frequent value
 
       1. Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/recipe.json">recipe</a> from this link
 
@@ -134,7 +136,9 @@
       3. Provide below details
 
           - Recipe Name
+          
           - Upload Recipe json script downloaded under Step 1
+          
           - Select Create and publish recipe
 
          <img src="images/image19.png" class="inline"/>  
@@ -176,8 +180,11 @@
       3. Provide below details
 
           - Job Name
+          
           - Job type
+          
           - Select right dataset
+          
           - Select right recipe
 
          <img src="images/image27.png" class="inline"/> 
