@@ -25,7 +25,7 @@
       - Exploring the dataset
       - Preparing the dataset
       - Creating a DataBrew job
-      - Viewing data lineage
+      - Viewing data lineage <br>
 
 - Step 2.1: Creating a project
 
