@@ -2,14 +2,14 @@
 
 **Introduction**
 
-- AWS Glue DataBrew is a new data preparation tool that simplify the cleansing and normalising the data to prepare it for analytics and machine learning for data analysts and data scientists
-- It provides over 250 transformations, no-code blueprint out of the box to automate the preparation tasks. Post the data is in good shape, we can use it for analytics and ML tasks. And the pricing model is also pay for what you use - no upfront commitment.
+- AWS Glue DataBrew is a new data preparation tool that simplifies the cleansing and normalizing the data to prepare it for analytics and machine learning for data analysts and data scientists
+- It provides over 250 transformations, no-code blueprint out of the box to automate the preparation tasks. Post the data is in good shape, we can use it for analytics and ML tasks. And the pricing model is also paid for what you use - no upfront commitment.
 
 **Tutorial**
 
-- Step 1 : Prerequisite  
+- Step 1: Prerequisite  
 
-  -  Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/dataset.csv">dataset</a> from this link and upload to S3 bucket
+  -  Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/dataset.csv">dataset</a> from this link and upload it to the S3 bucket
   
   -  Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/cloudformation.json">cloudformation template</a> from this link and Deploy it
   
@@ -17,7 +17,7 @@
       
       <img src="images/image1.png" class="inline"/> 
 
-- Step 2 : Working with Glue Databrew
+- Step 2: Working with Glue Databrew
   
   In this section, we will be working with AWS Glue Databrew and this section is divided into below parts
   
@@ -27,7 +27,7 @@
     - Creating a DataBrew job
     - Viewing data lineage
 
-- Step 2.1 : Creating a project
+- Step 2.1: Creating a project
 
     1. Traverse to the AWS Glue DataBrew service
 
@@ -59,27 +59,27 @@
 
        <img src="images/image8.png" class="inline"/> 
 
-       **Note:** This role name should match to the one we deployed via Cloudformation in the prerequisite section
+       **Note:** This role name should match the one we deployed via Cloudformation in the prerequisite section
 
     9. Select Create project
 
        <img src="images/image9.png" class="inline"/> 
 
-- Step 2.2 : Exploring the dataset 
+- Step 2.2: Exploring the dataset 
     
-    1. After the project has been configured, we will be presented with the Grid view. In this view the data is shown in tabular format
+    1. After the project has been configured, we will be presented with the Grid view. In this view, the data is shown in tabular format
 
        <img src="images/image10.png" class="inline"/> 
        
-       The Grid view present Columns in the dataset, different Data type of each column, Summary of the range of values that have been found and Statistical distribution for numerical columns
+       The Grid view presents Columns in the dataset, different Data type of each column,a Summary of the range of values that have been found, and Statistical distribution for numerical columns
 
-    2. Select on the Schema tab. In this view, you will be presented with statistics about the data values in each column.
+    2. Select the Schema tab. In this view, you will be presented with statistics about the data values in each column.
 
        <img src="images/image11.png" class="inline"/> 
        
-       The Schema view present the checkbox next to a column to view the summary of statistics for the column values, Toggle on/off the columns, Rename columns, Change the data type of columns and Rearrange the column order
+       The Schema view presents the checkbox next to a column to view the summary of statistics for the column values, Toggle on/off the columns, Rename columns, Change the data type of columns and Rearrange the column order
        
-    3. Select on the Profile tab. In this view, you can run a data profile job to examine and collect statistical summaries about the data
+    3. Select the Profile tab. In this view, you can run a data profile job to examine and collect statistical summaries about the data
     
         - Select Run data profile 
         
@@ -91,13 +91,13 @@
         
         - Under the Permissions section, select the role DataBrew-DataBrewLabRole--xxxxx from the drop-down list 
 
-             **Note:** This role name should match to the one we deployed via Cloudformation in the prerequisite section
+             **Note:** This role name should match the one we deployed via Cloudformation in the prerequisite section
         
         - Select Create and run job
         
             <img src="images/image13.png" class="inline"/>    
         
-        - Select on Jobs from the menu on the left hand side of the DataBrew console, Select on Profile jobs tab to view the status of profile job
+        - Select on Jobs from the menu on the left hand side of the DataBrew console, Select on the Profile jobs tab to view the status of the profile job
             
             <img src="images/image14.png" class="inline"/>    
             
@@ -107,7 +107,7 @@
 
             <img src="images/image16.png" class="inline"/>    
             
-            The data profile present a summary of the rows and columns in the dataset, how many columns and rows are valid, and relationships across the columns
+            The data profile presents a summary of the rows and columns in the dataset, how many columns and rows are valid, and relationships across the columns
         
         - Select on the Column statistics tab to view a column-by-column breakdown
         
@@ -149,7 +149,6 @@
     8. Post the job is completed successfully, verify the output file on the S3 Output location provided 
      
         <img src="images/image32.png" class="inline"/>  
-
 
 - Step 2.5 : Viewing data lineage
  
