@@ -21,11 +21,11 @@
   
   - In this section, we will be working with AWS Glue Databrew and this section is divided into below parts    
      
-     - Creating a project
-     - Exploring the dataset
-     - Preparing the dataset
-     - Creating a DataBrew job
-     - Viewing data lineage 
+     1. Creating a project
+     2. Exploring the dataset
+     3. Preparing the dataset
+     4. Creating a DataBrew job
+     5. Viewing data lineage 
 
   - Step 2.1: Creating a project
 
@@ -117,9 +117,9 @@
 
       - In this section, we will apply the different transformations to the dataset.
 
-        - Rename columns
-        - Change the data type of columns
-        - Filled with the most frequent value
+        1. Rename columns
+        2. Change the data type of columns
+        3. Filled with the most frequent value
 
       1. Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/recipe.json">recipe</a> from this link
 
