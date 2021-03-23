@@ -19,12 +19,13 @@
 
 - Step 2: Working with Glue Databrew
   
-  In this section, we will be working with AWS Glue Databrew and this section is divided into below parts
-    - Creating a project
-    - Exploring the dataset
-    - Preparing the dataset
-    - Creating a DataBrew job
-    - Viewing data lineage
+  - In this section, we will be working with AWS Glue Databrew and this section is divided into below parts
+    
+      - Creating a project
+      - Exploring the dataset
+      - Preparing the dataset
+      - Creating a DataBrew job
+      - Viewing data lineage
 
 - Step 2.1: Creating a project
 
@@ -112,7 +113,55 @@
         
             <img src="images/image17.png" class="inline"/>    
 
-- Step 2.3 : Preparing the dataset
+- Step 2.3: Preparing the dataset
+  
+    - In this section, we will apply the different transformations to the dataset.
+    
+      - Rename columns
+      - Change the data type of columns
+      - Filled with the most frequent value
+     
+    1. Download the <a href="https://github.com/sanchitdilipjain/aws-glue-databrew/blob/main/recipe.json">recipe</a> from this link
+    
+    2. Select on Recipe from the menu on the left-hand side of the DataBrew console and click Upload Recipe
+    
+       <img src="images/image18.png" class="inline"/> 
+    
+    3. Provide below details
+    
+        - Recipe Name
+        - Upload Recipe json script downloaded under Step 1
+        - Select Create and publish recipe
+        
+       <img src="images/image19.png" class="inline"/>  
+
+    4. Verify the recipe 
+    
+        <img src="images/image20.png" class="inline"/>  
+    
+    5. Now let's apply this recipe, click the project we configured now and the right side, click Import recipe 
+    
+        <img src="images/image21.png" class="inline"/>  
+    
+    6. Under Import recipe, select the recipe we configured and click Next
+    
+        <img src="images/image22.png" class="inline"/>  
+    
+    7. Select the Append option from the right side and click Next
+    
+        <img src="images/image23.png" class="inline"/>  
+    
+    8. Now let's validate the recipe and wait for all validation to be successful 
+    
+        <img src="images/image24.png" class="inline"/>   
+    
+    9. Once the validation is successful, click Import
+    
+        <img src="images/image25.png" class="inline"/>   
+    
+    10. Now you will be back to the project screen and with the recipe implied on the dataset
+    
+        <img src="images/image26.png" class="inline"/>   
 
 - Step 2.4 : Creating a DataBrew job
   
