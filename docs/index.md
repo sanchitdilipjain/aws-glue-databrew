@@ -65,10 +65,96 @@
 
        <img src="images/image9.png" class="inline"/> 
 
-- Step 2.2 : Exploring the dataset
+- Step 2.2 : Exploring the dataset 
+    
+    1. After the project has been configured, we will be presented with the Grid view. In this view the data is shown in tabular format
+
+       <img src="images/image10.png" class="inline"/> 
+       
+       The Grid view present Columns in the dataset, different Data type of each column, Summary of the range of values that have been found and Statistical distribution for numerical columns
+
+    2. Select on the Schema tab. In this view, you will be presented with statistics about the data values in each column.
+
+       <img src="images/image11.png" class="inline"/> 
+       
+       The Schema view present the checkbox next to a column to view the summary of statistics for the column values, Toggle on/off the columns, Rename columns, Change the data type of columns and Rearrange the column order
+       
+    3. Select on the Profile tab. In this view, you can run a data profile job to examine and collect statistical summaries about the data
+    
+        - Select Run data profile 
+        
+        - Under the job details and job run sample panels, leave the default values 
+         
+            <img src="images/image12.png" class="inline"/> 
+        
+        - Under the Job output settings section, provide the S3 bucket for storing the output 
+        
+        - Under the Permissions section, select the role DataBrew-DataBrewLabRole--xxxxx from the drop-down list 
+
+             **Note:** This role name should match to the one we deployed via Cloudformation in the prerequisite section
+        
+        - Select Create and run job
+        
+            <img src="images/image13.png" class="inline"/>    
+        
+        - Select on Jobs from the menu on the left hand side of the DataBrew console, Select on Profile jobs tab to view the status of profile job
+            
+            <img src="images/image14.png" class="inline"/>    
+            
+            <img src="images/image15.png" class="inline"/>    
+        
+        - When the profile job has successfully completed, click on View data profile
+
+            <img src="images/image16.png" class="inline"/>    
+            
+            The data profile present a summary of the rows and columns in the dataset, how many columns and rows are valid, and relationships across the columns
+        
+        - Select on the Column statistics tab to view a column-by-column breakdown
+        
+            <img src="images/image17.png" class="inline"/>    
 
 - Step 2.3 : Preparing the dataset
 
 - Step 2.4 : Creating a DataBrew job
+  
+    1. Select on Jobs from the menu on the left hand side of the DataBrew console
+
+    2. Under the Recipe jobs tab, select on Create job
+    
+    3. Provide below details
+    
+        - Job Name
+        - Job type
+        - Select right dataset
+        - Select right recipe
+
+       <img src="images/image27.png" class="inline"/> 
+     
+    4. Provide valid S3 output location and leave rest all default 
+     
+       <img src="images/image28.png" class="inline"/> 
+     
+    5. Select Create and Run job
+     
+       <img src="images/image29.png" class="inline"/>  
+     
+    6. The DataBrew job is created and the job status is Running
+     
+       <img src="images/image30.png" class="inline"/>  
+     
+    7. Pause until the job has completed successfully
+     
+       <img src="images/image31.png" class="inline"/>  
+     
+    8. Post the job is completed successfully, verify the output file on the S3 Output location provided 
+     
+        <img src="images/image32.png" class="inline"/>  
+
 
 - Step 2.5 : Viewing data lineage
+ 
+    1. In DataBrew, navigate back to the project, select on Lineage at the top right
+    
+       The below view shows the origin of the data and the transformation steps that the data has been through.
+
+       <img src="images/image33.png" class="inline"/> 
