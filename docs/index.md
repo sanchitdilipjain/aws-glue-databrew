@@ -71,7 +71,7 @@
 
        <img src="images/image10.png" class="inline"/> 
        
-       The Grid view presents Columns in the dataset, different Data type of each column,a Summary of the range of values that have been found, and Statistical distribution for numerical columns
+       The Grid view presents Columns in the dataset, different Data type of each column, a Summary of the range of values that have been found, and Statistical distribution for numerical columns
 
     2. Select the Schema tab. In this view, you will be presented with statistics about the data values in each column.
 
@@ -97,7 +97,7 @@
         
             <img src="images/image13.png" class="inline"/>    
         
-        - Select on Jobs from the menu on the left hand side of the DataBrew console, Select on the Profile jobs tab to view the status of the profile job
+        - Select on Jobs from the menu on the left-hand side of the DataBrew console, Select on the Profile jobs tab to view the status of the profile job
             
             <img src="images/image14.png" class="inline"/>    
             
@@ -163,9 +163,9 @@
     
         <img src="images/image26.png" class="inline"/>   
 
-- Step 2.4 : Creating a DataBrew job
+- Step 2.4: Creating a DataBrew job
   
-    1. Select on Jobs from the menu on the left hand side of the DataBrew console
+    1. Select on Jobs from the menu on the left-hand side of the DataBrew console
 
     2. Under the Recipe jobs tab, select on Create job
     
@@ -198,7 +198,7 @@
      
         <img src="images/image32.png" class="inline"/>  
 
-- Step 2.5 : Viewing data lineage
+- Step 2.5: Viewing data lineage
  
     1. In DataBrew, navigate back to the project, select on Lineage at the top right
     
